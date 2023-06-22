@@ -45,6 +45,12 @@
             filter: blur(0);
         }
     }
+
+    @media only screen and (max-width: 640px) {
+        #social {
+            justify-content: center;
+        }
+    }
 </style>
 <!-- class="bg-[url('./assets/bg.png')] bg-no-repeat bg-right-top" -->
 <script>
@@ -72,52 +78,59 @@
 
 </script>
 
-<body style="font-family: 'Ubuntu', sans-serif;" class="bg-white dark:bg-black dark:text-white">
-    <div class="bg-[url('./assets/bg.png')] bg-opacity-40 bg-contain bg-no-repeat bg-right-top px-3 sm:px-10">
-        <div class="flex flex-col justify-center h-screen sm:w-5/12">
-            <div
-                class="flex sm:flex-row flex-col-reverse justify-between bg-back items-center text-center sm:text-left">
-                <div>
-                    <h2 class="text-base sm:text-lg py-1">Hello!</h2>
-                    <p class="text-base py-1 sm:text-lg">I'm <span class="text-xl sm:text-2xl">Sree Teja Dusi</span> and
-                    </p>
-                    <p class="text-base py-1 sm:text-lg text-[#6A45BE]">Teaching Machines<span
-                            class="dark:text-white text-black"> is my Ikigai.</span></p>
+<body style="font-family: 'Ubuntu', sans-serif;" class="bg-[url('./assets/gradient.png')] overscroll-none">
+    <div
+        class="bg-white bg-[url('./assets/bg.png')] bg-opacity-40 bg-fixed bg-no-repeat bg-right-top m-4 sm:m-20 rounded-3xl shadow-2xl">
+        <div class="w-full bg-[#ffffff8c] sm:bg-transparent px-3 sm:px-10 rounded-3xl">
+            <div class="flex flex-col justify-center h-screen sm:w-5/12">
+                <div
+                    class="flex sm:flex-row flex-col-reverse justify-between bg-back items-center text-center sm:text-left">
+                    <div>
+                        <h2 class="text-base sm:text-lg py-1">Hello!</h2>
+                        <p class="text-base py-1 sm:text-lg">I'm <span class="text-xl sm:text-2xl">Sree Teja Dusi</span>
+                            and
+                        </p>
+                        <p class="text-base py-1 sm:text-lg text-[#6A45BE]">Teaching Machines<span class="text-black">
+                                is my Ikigai.</span></p>
+                    </div>
+                    <img src="./assets/logo.png" alt="logo" class="w-32 sm:w-40">
                 </div>
-                <img src="./assets/logo.png" alt="logo" class="w-32 sm:w-40">
+                <p id="animated-paragraph"
+                    class="py-2 sm:py-3 text-sm sm:text-base text-justify tracking-wide leading-7 sm:tracking-wider sm:leading-9">
+                </p>
+
+                <div class="flex py-8">
+                    <a style="animation-delay: 3.8s;"
+                        class="word-animation inline-flex text-sm sm:text-base w-fit pr-6 hover:text-[#406ADC] duration-200"
+                        href="https://blog.sreeteja.dev" target="_blank">Explore my blog<i class="px-1"
+                            data-feather="external-link"></i></a>
+                    <a style="animation-delay: 4.2s;"
+                        class="word-animation inline-flex text-sm sm:text-base w-fit pl-6 hover:text-[#406ADC] duration-200"
+                        href="https://linkedin.com/in/sreetejadusi" target="_blank">Know more<i class="px-1"
+                            data-feather="external-link"></i></a>
+
+                </div>
             </div>
-            <p id="animated-paragraph"
-                class="py-2 sm:py-3 text-sm sm:text-base text-justify tracking-wide leading-7 sm:tracking-wider sm:leading-9">
-            </p>
-
-            <div class="flex py-8">
-                <a style="animation-delay: 3.8s;"
-                    class="word-animation inline-flex text-sm sm:text-base w-fit pr-6 hover:text-[#406ADC] duration-200"
-                    href="https://blog.sreeteja.dev" target="_blank">Explore my blog<i class="px-1"
-                        data-feather="external-link"></i></a>
-                <a style="animation-delay: 4.2s;"
-                    class="word-animation inline-flex text-sm sm:text-base w-fit pl-6 hover:text-[#406ADC] duration-200"
-                    href="https://linkedin.com/in/sreetejadusi" target="_blank">Know more<i class="px-1"
-                        data-feather="external-link"></i></a>
-
+            <div id="social" class="flex sm:justify-end py-4">
+                <div class="inline-flex justify-evenly w-11/12 sm:w-4/12">
+                    <a href="https://linkedin.com/in/sreetejadusi" target="_blank"
+                        class="hover:text-[#406ADC] duration-200"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/sreetejadusi" targket="_blank"
+                        class="hover:text-[#406ADC] duration-200">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://hashnode.com/@sreetejadusi" target="_blank"
+                        class="hover:text-[#406ADC] duration-200"><i class="fa-brands fa-hashnode"></i></a>
+                    <a href="https://g.dev/sreetejadusi" target="_blank" class="hover:text-[#406ADC] duration-200"><i
+                            class="fa-brands fa-google"></i></a>
+                    <a href="https://instagram.com/thesreetejadusi" target="_blank"
+                        class="hover:text-[#406ADC] duration-200"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/sreetejadusi" target="_blank"
+                        class="hover:text-[#406ADC] duration-200"><i class="fa-brands fa-twitter"></i></a>
+                </div>
             </div>
+        </div>
 
-        </div>
-        <div class="flex justify-evenly self-center w-full sm:w-3/12 sm:absolute sm:right-2 sm:bottom-3">
-            <a href="https://linkedin.com/in/sreetejadusi" target="_blank" class="hover:text-[#406ADC] duration-200"><i
-                    class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://github.com/sreetejadusi" targket="_blank" class="hover:text-[#406ADC] duration-200">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://hashnode.com/@sreetejadusi" target="_blank" class="hover:text-[#406ADC] duration-200"><i
-                    class="fa-brands fa-hashnode"></i></a>
-            <a href="https://g.dev/sreetejadusi" target="_blank" class="hover:text-[#406ADC] duration-200"><i
-                    class="fa-brands fa-google"></i></a>
-            <a href="https://instagram.com/thesreetejadusi" target="_blank" class="hover:text-[#406ADC] duration-200"><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com/sreetejadusi" target="_blank" class="hover:text-[#406ADC] duration-200"><i
-                    class="fa-brands fa-twitter"></i></a>
-        </div>
     </div>
 </body>
 <script>
